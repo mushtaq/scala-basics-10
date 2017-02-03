@@ -34,10 +34,6 @@ object App2 extends App {
     }
 
     promise.future
-
-    async {
-      op(await(f))
-    }
   }
 
   println(map(f1, x => x * x).show())
