@@ -1,17 +1,16 @@
 import asynchrony.FutureExtensions.RichFuture
 
 import scala.async.Async._
-import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
-
+import asynchrony.BlockingConfig.ec
 
 def square(x: Int): Future[Int] = Future {
   Thread.sleep(2000)
-  println("running the square")
+//  println("running the square")
   x * x
 }
 
-val xs = (1 to 4).toList
+val xs = (1 to 40).toList
 
 val futures: List[Future[Int]] = xs.map(square)
 

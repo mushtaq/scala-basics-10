@@ -11,6 +11,7 @@ lazy val root = (project in file(".")).
     libraryDependencies ++= Seq(
       `play-json`,
       `scala-async`,
+      `akka-stream`,
       scalaTest % Test
     )
   )
