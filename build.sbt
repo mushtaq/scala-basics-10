@@ -12,6 +12,10 @@ lazy val root = (project in file(".")).
       `play-json`,
       `scala-async`,
       `akka-stream`,
+      `akka-sse`,
+      `akka-http`,
+      `play-ahc-ws-standalone`,
+      `jmdns`,
       scalaTest % Test
     )
   )
